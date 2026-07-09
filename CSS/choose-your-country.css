@@ -20,7 +20,7 @@ body { background-color: transparent; margin: 0 auto; width: 984px; }
 .section ul li.clear { clear: left; }
 
 /* flags */
-.section ul li a.generic { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/generic.jpg); }
+.section ul li a.generic { background-image: url(/Apple2010/images/Country/generic.jpg); }
 .section ul li a.argentina { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/argentina.jpg); }
 .section ul li a.armenia { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/armenia.png); }
 .section ul li a.australia { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/australia.jpg); }
