@@ -1,2 +1,2 @@
 # Apple2010
-All credis go to the Internet Archive
+All credits go to the Internet Archive
