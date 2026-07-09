@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-US">
+<head><script src="https://web-static.archive.org/_static/js/athena.js" type="text/javascript"></script>
+
+	<title>Apple - iPad - See the web, email, and photos like never before.</title>
+	<meta name="omni_page" content="iPad - Index"/>
+	<meta name="Category" content="products,ipad"/>
+	<meta name="Description" content="The iPad. With a revolutionary, 9.7 inch touch screen, and amazing new apps, it does things no tablet PC, netbook, or e-reader could. Starts at $499."/>
+	<script language="javascript">
+	 var gomez={ 
+		 gs: new Date().getTime(), 
+		 acctid:'c2c738', 
+		 pgid:'iPad Tab Page', 
+		 grpid:'' 
+ 	}; 
+ </script>
+	<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+
+	
+<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/lib/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/swap_view.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/view_master_tracker.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	if (typeof(tracker) == 'undefined') {
+		tracker = false;
+	}
+
+	Event.onDOMReady(function() {
+		if (!tracker) {
+			tracker = new AC.ViewMaster.Tracker('click');
+		}
+	});
+</script>
+
+
+
+	
+
+<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/scripts/ac_media.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="https://web.archive.org/web/20100828013844cs_/http://images.apple.com/global/styles/ac_media.css" type="text/css"/>
+
+
+
+	<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/ipad/scripts/ipad.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var slideshow = null;
+		Event.onDOMReady(function() {
+			// set up the view master and delegate
+			var video = new AC.ViewMaster.Viewer([$('hero-slideshow')], 'hero', 'hero-video', { silentTriggers:true });
+			video.setDelegate({
+				willShow: function(view, outgoing, incoming) {
+					if (incoming) {
+						if (incoming.id == 'hero-slideshow') {
+							window.setTimeout(slideshow.start.bind(slideshow), 2000);
+						} else if (incoming.id == 'video') {
+							incoming.triggers().each(Element.hide);
+							slideshow.stop();
+						}
+					}
+
+					if (outgoing) {
+						outgoing.triggers().each(Element.show);
+					}
+				}
+			});
+			
+			var viewer = new AC.ViewMaster.Viewer($$('a.swap'), 'swap', 'swap', { silentTriggers: true, animationDuration: 1.2 });
+			var slideshow = new AC.ViewMaster.Slideshow(viewer, null, { autoplay: true, delay: 3500 });
+			
+			// news ticker
+			var viewer2 = new AC.ViewMaster.Viewer($$('div.news-item'), 'news-swap', 'news-link', { silentTriggers: true, animationDuration: 1.2 });
+			var slideshow2 = new AC.ViewMaster.Slideshow(viewer2, null, { autoplay: true, delay: 7000 });
+			
+			// stop ticker when a link is manually pressed
+			$$('a.news-link').each(function(link) {
+				link.observe('mousedown', function(e) {
+					slideshow2.stop();
+				});
+			});
+			
+			
+			//tracking
+			var promos;
+			if(promos = $$('.column .more')){
+				promos.each(function(element) {
+					element.observe('mousedown', function(event){
+						var name = AC.Tracking.pageName();
+						if(element.innerHTML.match(/pre-order/)){name += ' - k2 footer - pre-order';}
+						else{name += ' - k2 footer - reserve';}
+						AC.Tracking.trackClick({prop3: name}, this, 'o', name);
+					});
+				})
+			}
+		});
+	</script>
+	<link rel="stylesheet" href="https://web.archive.org/web/20100828013844cs_/http://images.apple.com/global/styles/base.css" type="text/css"/>
+	<link rel="stylesheet" href="https://web.archive.org/web/20100828013844cs_/http://images.apple.com/global/styles/buystrip.css" type="text/css"/>
+	<link rel="stylesheet" href="https://web.archive.org/web/20100828013844cs_/http://images.apple.com/ipad/styles/ipad.css" type="text/css"/>
+	<link rel="stylesheet" href="https://web.archive.org/web/20100828013844cs_/http://images.apple.com/ipad/home/styles/home.css" type="text/css"/>
+</head>
+<body id="overview"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;" toolbar-mode="auto">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;height:0;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20100828013844/http%3A//www.apple.com/ipad/"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;" nav="async">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-100.png, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.apple.com/ipad/" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100828013844" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;">
+          </div>
+        <div class="k">
+          <a href="" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="775" height="27" border="0"></canvas>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap">Jul</td>
+            <td class="c" id="displayMonthEl" title="You are here: 01:38:44 Aug 28, 2010">AUG</td>
+            <td class="f" nowrap="nowrap">Sep</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><span class="ta"></span></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 01:38:44 Aug 28, 2010">28</td>
+            <td class="f" nowrap="nowrap"><span class="ta"></span></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap">2009</td>
+            <td class="c" id="displayYearEl" title="You are here: 01:38:44 Aug 28, 2010">2010</td>
+            <td class="f" nowrap="nowrap">2011</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#" title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="https://help.archive.org/help/category/the-wayback-machine/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20100828013844/http://web.archive.org/screenshot/http://www.apple.com/ipad/"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20100828013844/http://www.apple.com/ipad/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20100828013844/http://www.apple.com/ipad/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center;padding:2px 0;">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/web_el_2010)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/web_el_2010" target="_new"><span class="wm-title">web_el_2010</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  This data is currently not publicly accessible.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center;padding:2px 0;" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web-static.archive.org/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print"></div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(775,27,25,2,"web","http://www.apple.com/ipad/","20100828013844",1996,"https://web-static.archive.org/_static/",["https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3","https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+	<script src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/nav/scripts/shortcuts.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var searchSection = 'global';
+	var searchCountry = 'us';
+</script>
+<div id="globalheader" class="ipad">
+	<!--googleoff: all-->
+	<ul id="globalnav">
+		<li id="gn-apple"><a href="/web/20100828013844/http://www.apple.com/">Apple</a></li>
+		<li id="gn-store"><a href="https://web.archive.org/web/20100828013844/http://store.apple.com/">Store</a></li>
+		<li id="gn-mac"><a href="/web/20100828013844/http://www.apple.com/mac/">Mac</a></li>
+		<li id="gn-ipod"><a href="/web/20100828013844/http://www.apple.com/ipod/">iPod</a></li>
+		<li id="gn-iphone"><a href="/web/20100828013844/http://www.apple.com/iphone/">iPhone</a></li>
+		<li id="gn-ipad"><a href="/web/20100828013844/http://www.apple.com/ipad/">iPad</a></li>
+		<li id="gn-itunes"><a href="/web/20100828013844/http://www.apple.com/itunes/">iTunes</a></li>
+		<li id="gn-support"><a href="/web/20100828013844/http://www.apple.com/support/">Support</a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+		<form action="https://web.archive.org/web/20100828013844/http://searchcgi.apple.com/cgi-bin/sp/nph-searchpre11.pl" method="post" class="search" id="g-search">
+			<div>
+				<input type="hidden" value="utf-8" name="oe" id="search-oe">
+				<input type="hidden" value="p" name="access" id="search-access">
+				<input type="hidden" value="us_only" name="site" id="search-site">
+				<input type="hidden" value="lang_en" name="lr" id="search-lr">
+				<label for="sp-searchtext"><span class="prettyplaceholder">Search</span><input type="search" name="q" id="sp-searchtext" class="g-prettysearch applesearch" accesskey="s"></label>
+			</div>
+		</form>
+		<div id="sp-results"><div class="inside"></div></div>
+	</div>
+</div>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleusipad"
+</script>
+
+<script type="text/javascript" src="https://web.archive.org/web/20100828013844js_/http://images.apple.com/global/metrics/js/s_code_h.js"></script>
+
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName()+" (US)";
+s.server=""
+s.channel="www.us.ipad"
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=document.URL;
+s.prop5=""
+
+if (s.pageName){
+    if(s.pageName.match(/features/)){
+        var pnSub=s.pageName.substring(0,s.pageName.indexOf('-'));
+        s.prop24=pnSub+' - features';
+        s.prop25=s.c_r('s_ipad_nav');
+        s.c_w('s_ipad_nav','');
+    }
+}
+
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+
+
+	<div id="productheader">
+	<h2><a href="/web/20100828013844/http://www.apple.com/ipad/"><img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/images/product_title_20100127.png" alt="iPad" width="60" height="25"/></a></h2>
+	<ul>
+		<li id="pn-features"><a href="/web/20100828013844/http://www.apple.com/ipad/features/">Features</a></li>
+		<li id="pn-design"><a href="/web/20100828013844/http://www.apple.com/ipad/design/">Design</a></li>
+		<li id="pn-apps"><a href="/web/20100828013844/http://www.apple.com/ipad/apps-for-ipad/">Apps for iPad</a></li>
+		<li id="pn-gallery"><a href="/web/20100828013844/http://www.apple.com/ipad/gallery/">Gallery</a></li>
+		<li id="pn-guidedtours"><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/">Guided Tours</a></li>
+		<li id="pn-specs"><a href="/web/20100828013844/http://www.apple.com/ipad/specs/">Tech Specs</a></li>
+		<li><a class="buynows" href="https://web.archive.org/web/20100828013844/http://store.apple.com/us/go/ipad?aid=AIC-WWW-NAUS-K2-BUYNOW-IPAD">Buy iPad now.</a></li>
+	</ul>
+</div>
+
+	<div id="main" class="content">
+		<div class="gallery" id="hero">
+			<div id="hero-slideshow" class="gallery-view">
+				<div id="hero-content">
+					<div id="swap">
+						<div id="swaphero">
+							<a href="/web/20100828013844/http://www.apple.com/ipad/features/"><img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/hero1_20100414.png" alt="" width="570" height="690"/></a>
+						</div>
+					</div>
+					<div id="swapnav">
+						<a class="swap" href="#swaphero" rel="nofollow"></a>
+						<a class="swap" href="/web/20100828013844/http://www.apple.com/ipad/home/includes/hero2.html#hero2" rel="nofollow"></a>
+						<a class="swap" href="/web/20100828013844/http://www.apple.com/ipad/home/includes/hero3.html#hero3" rel="nofollow"></a>
+						<a class="swap" href="/web/20100828013844/http://www.apple.com/ipad/home/includes/hero4.html#hero4" rel="nofollow"></a>
+						<a class="swap" href="/web/20100828013844/http://www.apple.com/ipad/home/includes/hero5.html#hero5" rel="nofollow"></a>
+						<a class="swap" href="/web/20100828013844/http://www.apple.com/ipad/home/includes/hero6.html#hero6" rel="nofollow"></a>
+						<a class="swap" href="/web/20100828013844/http://www.apple.com/ipad/home/includes/hero7.html#hero7" rel="nofollow"></a>
+					</div>
+
+					<h1><a href="/web/20100828013844/http://www.apple.com/ipad/features/"><img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/hero_title_20100127.png" alt="iPad." width="118" height="54"/></a></h1>
+					<h2><a href="/web/20100828013844/http://www.apple.com/ipad/features/"><img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/hero_headline_20100305.png" alt="A magical and revolutionary product at an unbelievable price. Starting at $499." width="336" height="74"/></a></h2>
+					<p class="last"><a href="/web/20100828013844/http://www.apple.com/retail/" class="more">Find an Apple Retail Store</a></p>
+					<p><a href="https://web.archive.org/web/20100828013844/http://store.apple.com/us/go/ipad/" class="more">Buy from the Apple Online Store</a></p>
+
+					<ul class="video-links">
+						<li class="tours-video"><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/">
+							<em class="more">Watch the Guided Tours</em>
+						</a></li>
+						<li class="ipad-ad-video"><a href="/web/20100828013844/http://www.apple.com/ipad/gallery/#ad">
+							<em class="more">Watch the new TV ad</em>
+						</a></li>
+						<li class="product-video"><a href="/web/20100828013844/http://www.apple.com/ipad/includes/video-ipad.html#video" class="hero-video">
+							<em class="more">Watch the iPad video</em>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!--gallery-->
+
+		<div id="news" class="roundedbottom grid2col">
+			<div class="column first">
+				<h4>Latest iPad News</h4>
+				<ul class="news-nav">
+					<li><a class="news-link" href="#news1">1</a></li>
+					<li><a class="news-link" href="#news2">2</a></li>
+					<li><a class="news-link" href="#news3">3</a></li>
+					<li><a class="news-link" href="#news4">4</a></li>
+				</ul>
+			</div>
+			<div class="column last">
+				<div id="news-swap">
+					<div class="news-item" id="news1">
+						<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/news_velcro_20100615.png" alt="" width="67" height="48" class="left"/>
+						<p><strong>iPad+Velcro.</strong> iPad owner Jesse Rosten created this clever video to demonstrate “two of mankind’s greatest inventions, together at last.” <a href="/web/20100828013844/http://www.apple.com/ipad/velcro/" class="more">Watch the video</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="news-items">
+				<div class="news-item" id="news2"><p><strong>Apple sells three million iPads in 80 days.</strong> iPad sales have topped three million since the device’s U.S. introduction on April 3. <a href="/web/20100828013844/http://www.apple.com/pr/library/2010/06/22ipad.html" class="more">Learn more</a></p></div>
+				<div class="news-item" id="news3"><p><strong>Finger painting becomes high art on iPad.</strong> Brooklyn-based artist David Kassan demonstrates the power of the Brushes app on iPad in this time-lapse video. <a href="https://web.archive.org/web/20100828013844/http://www.youtube.com/watch?v=5OLP4nbAVA4" class="more">Learn more</a></p></div>
+				<div class="news-item" id="news4"><p><strong>ESPN goes live with iPad.</strong> Engadget reports ESPN on-air analysts are using iPad as a telestrator to control graphics, overlays, doodle input, and shading on live telecasts. <a href="https://web.archive.org/web/20100828013844/http://www.engadget.com/2010/06/12/editorial-espn-bypasses-corporate-red-tape-with-ipad-and-xbox-3/" class="more">Learn more</a></p></div>
+			</div>
+		</div>
+	</div><!--/main-->
+					
+	<ul id="featurettes" class="content">
+		<li id="features-bucket"><a href="/web/20100828013844/http://www.apple.com/ipad/features/" class="roundedleft">
+			<h3>The best way to experience the web, email, photos, and video. Hands down.</h3>
+			<p>Imagine being able to page through websites, write an email, flick through photos, or watch a movie. All on a big, beautiful Multi-Touch screen. With just the touch of a finger. <em class="more">Learn more</em></p>
+			<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/best_experience_20100430.png" alt="" width="245" height="154"/>
+		</a></li>
+		<li><a href="/web/20100828013844/http://www.apple.com/ipad/design/">
+			<h3>It's hard to believe we could fit so many great ideas into something so thin.</h3>
+			<p>iPad has a 9.7-inch, LED-backlit IPS display with a remarkably precise Multi-Touch screen. And yet, at just 1.5 pounds and 0.5 inch thin, it’s easy to carry and use anywhere. <em class="more">Learn more</em></p>
+			<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/multi_touch_display_20100430.png" alt="" width="244" height="154"/>
+		</a></li>
+		<li><a href="/web/20100828013844/http://www.apple.com/ipad/apps-for-ipad/">
+			<h3>Thousands of apps made just for iPad. With more coming every day.</h3>
+			<p>You’ll find thousands of apps on the App Store specifically designed for iPad. And iPad can run almost all the 200,000 apps for iPhone and iPod touch — even the apps you already have. <em class="more">Learn more</em></p>
+			<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/thousands_apps_20100430.png" alt="" width="244" height="154"/>
+		</a></li>
+		<li><a href="/web/20100828013844/http://www.apple.com/ipad/3g/" class="roundedright">
+			<h3>iPad with Wi-Fi + 3G. The best way to stay connected.</h3>
+			<p>Now you can take your network with you wherever you go and enjoy superfast data speeds on iPad. Sign up for one of the breakthrough, no-contract AT&amp;T 3G rate plans right on your iPad. <em class="more">Learn more</em></p>
+			<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/wireless_20100615.png" alt="" width="244" height="154"/>
+		</a></li>
+	</ul><!--/featurettes-->
+
+	<div id="buystrip">
+		<div class="grid4col">
+			<div class="column first pricing">
+				<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/buystrip_ipad_20100225.png" width="95" height="131" alt="" class="right"/>
+				<h2><img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/buystrip_title_20100225.png" width="55" height="26" alt="iPad"/></h2>
+				<p>Starting at $499.</p>
+			</div><!--/pricing-->
+			<div class="column">
+				<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/global/elements/buystripmodule/buystrip-icon-onlinestore.gif" width="31" height="33" alt="" class="icon"/>
+				<h3>Apple Online Store</h3>
+				<p>Buy iPad and we’ll ship it free directly to your door. <a href="https://web.archive.org/web/20100828013844/http://store.apple.com/us/go/ipad?aid=AIC-WWW-NAUS-K2-CONFIGURE-IPAD" class="more">Buy now</a></p>
+			</div><!--/online_store-->
+			<div class="column">
+				<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/global/elements/buystripmodule/buystrip-icon-retail.gif" width="31" height="33" alt="" class="icon"/>
+				<h3>Apple Retail Store</h3>
+				<p>Buy iPad at your favorite Apple Retail Store. <a href="/web/20100828013844/http://www.apple.com/retail/storelist/" class="more">Find a store</a></p>
+			</div><!--/retail-->
+			<div class="column last">
+				<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/global/elements/buystripmodule/buystrip-icon-phone.gif" width="31" height="40" alt="" class="icon"/>
+				<h3>1-800-MY-APPLE <span>(1-800-692-7753)</span></h3>
+				<p>Have questions about iPad? Call to talk with an Apple Specialist.</p>
+			</div><!--/phone-->
+		</div><!--/grid4col-->
+	</div>
+	
+	<div id="sdk" class=" grid2col content">
+		<div class="column first">
+			<a href="https://web.archive.org/web/20100828013844/http://developer.apple.com/ipad/sdk/">
+				<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/promo_sdk_20100403.png" width="74" height="95" alt="" class="left"/>
+				<h3>SDK 3.2 for iPad.</h3>
+				<p>Start developing the next generation of innovative applications for iPad with iPhone SDK 3.2.<br/><span class="more">Learn more</span></p>
+			</a>
+		</div>
+		<div class="column last">
+			<a href="/web/20100828013844/http://www.apple.com/ipad/business/">
+				<img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/ipad/home/images/promo_business_20100403.png" alt="" width="123" height="105" class="left"/>
+				<h3>iPad in business.</h3>
+				<p>iPad delivers breakthrough business features on day one. <br/><span class="more">Learn more</span></p>
+			</a>
+		</div>
+	</div><!--/content-->
+
+	<ul class="sosumi">
+		<li>Some features and applications are not available in all areas. Application availability and pricing are subject to change.</li>
+
+		<li>Available on the iBookstore. Title availability is subject to change.</li>
+	</ul>
+
+	<div id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/web/20100828013844/http://www.apple.com/">Home</a></li>
+				<li>iPad</li>
+			</ol><!--/breadcrumbs-->
+			<div id="directorynav" class="ipad">
+	<div id="dn-cola" class="column first">
+		<h3>About iPad</h3>
+		<ul>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/features/">Features</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/design/">Design</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/apps-for-ipad/">Apps for iPad</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/gallery/">Gallery</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/specs/">Tech Specs</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/ipad-video/">iPad Video</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/gallery/#ad">TV Ad</a></li>
+		</ul>
+	</div>
+	<div id="dn-colb" class="column">
+		<h3>iPad Guided Tours</h3>
+		<ul>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/#safari">Safari</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/#mail">Mail</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/#photos">Photos</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/#videos">Videos</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/#youtube">YouTube</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/#ipod">iPod</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/guided-tours/#all">All iPad Guided Tours</a></li>
+		</ul>
+	</div>
+	<div id="dn-colc" class="column">
+		<h3>More iPad</h3>
+		<ul>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/3g/">iPad with 3G</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/accessories/">Accessories</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/mobileme/">iPad + MobileMe</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/business/">iPad in Business</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/sdk/">iPad for Developers</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/ipad/features/accessibility.html">Accessibility</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/batteries/ipad.html">Batteries</a></li>
+		</ul>
+	</div>
+	<div id="dn-cold" class="column last">
+		<h3>Support</h3>
+		<ul>
+
+
+			<li><a href="/web/20100828013844/http://www.apple.com/support/ipad/">Online Support</a></li>
+			<li><a href="https://web.archive.org/web/20100828013844/http://manuals.info.apple.com/en_US/iPad_User_Guide.pdf">User Guide</a></li>
+			<li><a href="https://web.archive.org/web/20100828013844/http://discussions.apple.com/category.jspa?categoryID=267">Discussions</a></li>
+
+			<li><a href="/web/20100828013844/http://www.apple.com/retail/workshops/">Workshops</a></li>
+			<li><a href="/web/20100828013844/http://www.apple.com/retail/onetoone/">One to One</a></li>
+		</ul>
+	</div>
+	<div class="capbottom"></div>
+</div>
+
+		</div>
+		<p class="gf-buy">Shop the <a href="/web/20100828013844/http://www.apple.com/store/">Apple Online Store</a> (1-800-MY-APPLE), visit an <a href="/web/20100828013844/http://www.apple.com/retail/">Apple Retail Store</a>, or find a <a href="/web/20100828013844/http://www.apple.com/buy/">reseller</a>.</p>
+
+<ul class="gf-links piped">
+	<li><a href="/web/20100828013844/http://www.apple.com/about/" class="first">Apple Info</a></li>
+	<li><a href="/web/20100828013844/http://www.apple.com/sitemap/">Site Map</a></li>
+	<li><a href="/web/20100828013844/http://www.apple.com/hotnews/">Hot News</a></li>
+	<li><a href="/web/20100828013844/http://www.apple.com/rss/">RSS Feeds</a></li>
+	<li><a href="/web/20100828013844/http://www.apple.com/contact/" class="contact_us">Contact Us</a></li>
+	<li><a href="/web/20100828013844/http://www.apple.com/choose-your-country/" class="choose" title="Choose your country or region."><img src="https://web.archive.org/web/20100828013844im_/http://images.apple.com/home/elements/worldwide_us.png" alt="United States" width="22" height="22"></a></li>
+</ul>
+
+<div class="gf-sosumi">
+	<p>Copyright © 2010 Apple Inc. All rights reserved.</p>
+	<ul class="piped">
+		<li><a href="/web/20100828013844/http://www.apple.com/legal/terms/site.html" class="first">Terms of Use</a></li>
+		<li><a href="/web/20100828013844/http://www.apple.com/privacy/">Privacy Policy</a></li>
+	</ul>
+</div>
+
+	</div><!--/globalfooter-->
+</body>
+</html>
+
+<!--
+     FILE ARCHIVED ON 01:38:44 Aug 28, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:29:10 Jul 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.435
+  exclusion.robots: 0.033
+  exclusion.robots.policy: 0.025
+  esindex: 0.007
+  cdx.remote: 1017.659
+  LoadShardBlock: 91.301 (6)
+  PetaboxLoader3.datanode: 90.765 (7)
+  load_resource: 80.673
+  PetaboxLoader3.resolve: 54.491
+  nav: 0.18 (6)
+-->
