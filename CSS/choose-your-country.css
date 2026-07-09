@@ -7,7 +7,7 @@ body { background-color: transparent; margin: 0 auto; width: 984px; }
 #header h1 { background: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/title-chooseyourcountry.png) no-repeat 0 0; display: inline; float: left; height: 32px; line-height: 32px; margin: 1px 0 6px 12px !important;  padding: 0; width: 416px; }
 
 /* main */
-#main { background: transparent url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/content-bg-20090113.png) repeat-y 0 0; }
+#main { background: transparent url(/Apple2010/images/Country/content-bg-20090113.png) repeat-y 0 0; }
 #content { background: transparent url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/content-bg-bottom-20090113.png) no-repeat 0 100%; padding: 43px 50px 26px; position:relative;}
 
 .section { clear: left; float: left; padding-bottom: 18px; width: 100%; }
@@ -65,9 +65,9 @@ body { background-color: transparent; margin: 0 auto; width: 984px; }
 .section ul li a.ivory_coast { background-image: url(https://Joethelavaboy.github.io/Apple2010/images/Country/ivory_coast.jpg); }
 .section ul li a.jamaica { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/jamaica.jpg); }
 .section ul li a.japan { background-image: url(/Apple2010/images/Country/japan.jpg); }
-.section ul li a.jordan { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/jordan.jpg); }
-.section ul li a.kenya { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/kenya.jpg); }
-.section ul li a.korea { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/korea.jpg); }
+.section ul li a.jordan { background-image: url(/Apple2010/images/Country/jordan.jpg); }
+.section ul li a.kenya { background-image: url(/Apple2010/images/Country/kenya.jpg); }
+.section ul li a.korea { background-image: url(/Apple2010/images/Country/korea.jpg); }
 .section ul li a.kuwait { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/kuwait.jpg); }
 .section ul li a.latvia { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/latvia.jpg); }
 .section ul li a.liechtenstein { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/liechtenstein.jpg); }
@@ -117,8 +117,8 @@ body { background-color: transparent; margin: 0 auto; width: 984px; }
 .section ul li a.tunisia { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/tunisia.jpg); }
 .section ul li a.turkey { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/turkey.jpg); }
 .section ul li a.uganda { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/uganda.jpg); }
-.section ul li a.uk { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/uk.jpg); }
-.section ul li a.united_arab_emirates { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/unitedarabemirates20090218.png); }
+.section ul li a.uk { background-image: url(/Apple2010/images/Country/uk.jpg); }
+.section ul li a.united_arab_emirates { background-image: url(/Apple2010/images/Country/unitedarabemirates20090218.png); }
 .section ul li a.uruguay { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/uruguay.jpg); }
 .section ul li a.usa { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/usa.jpg); }
 .section ul li a.venezuela { background-image: url(/web/20100828163725im_/http://images.apple.com/choose-your-country/images/flags/venezuela.jpg); }
