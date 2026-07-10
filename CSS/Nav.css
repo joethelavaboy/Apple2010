@@ -4,7 +4,7 @@
 #globalheader #globalnav:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 #globalheader #globalnav li { display: inline; }
 #globalheader #globalnav li a { float: left; width: 103px; height: 0; padding-top: 38px; overflow: hidden; background-image: url(/web/20100901031121im_/http://images.apple.com/global/nav/images/globalnavbg.png); _background-image: url(/web/20100901031121im_/http://images.apple.com/global/nav/images/globalnavbg.gif); background-repeat: no-repeat; }
-#globalheader #globalsearch { background-image: url(/web/20100901031121im_/http://images.apple.com/global/nav/images/globalnavbg.png); _background-image: url(/web/20100901031121im_/http://images.apple.com/global/nav/images/globalnavbg.gif); background-repeat: no-repeat; }
+#globalheader #globalsearch { background-image: url(/Apple2010/images/Home/Navigator.png); _background-image: url(/web/20100901031121im_/http://images.apple.com/global/nav/images/globalnavbg.gif); background-repeat: no-repeat; }
 
 /* BUTTONS */
 #globalheader #globalnav li#gn-apple a { background-position: 0 0; }
