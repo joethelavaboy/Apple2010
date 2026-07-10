@@ -263,20 +263,23 @@
 		}
 	};
 
-	var controller = new apple.controller.CTOStateController(state);
-	controller.registerWithName('state');
+// --- COMPLETE REDIRECT OVERRIDE START ---
+document.addEventListener('click', function(event) {
+    // Looks for anything inside the right-hand summary/cart actions panel or main buttons
+    var target = event.target;
+    if (target.closest('.summary') || target.closest('.purchase') || target.closest('form') || target.id === 'add-to-cart') {
+        event.preventDefault();
+        event.stopPropagation();
+        window.location.href = 'https://Google.com';
+    }
+}, true);
 
-	// --- COMPLETE SUBMIT BLOCK START ---
-	window.addEventListener('submit', function(event) {
-		event.preventDefault(); // Blocks the Wayback Machine / Apple from loading
-		event.stopPropagation(); // Stops all other 2010 scripts
-		window.location.href = 'https://Google.com'; // Redirects instantly
-		return false;
-	}, true);
-	// --- COMPLETE SUBMIT BLOCK END ---
-
-// ]]>
-</script>
+window.addEventListener('submit', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    window.location.href = 'https://Google.com';
+}, true);
+// --- COMPLETE REDIRECT OVERRIDE END ---
 
 
     
