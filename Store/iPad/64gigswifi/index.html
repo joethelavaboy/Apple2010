@@ -264,16 +264,23 @@
 	};
 
 // --- COMPLETE REDIRECT OVERRIDE START ---
+// 1. Immediately smash any programmatic framework redirects from coherent/cto.js
+if (!window.apple) window.apple = {};
+if (!window.coherent) window.coherent = {};
+
+// 2. Intercept all clicks globally before the framework can process them
 document.addEventListener('click', function(event) {
-    // Looks for anything inside the right-hand summary/cart actions panel or main buttons
     var target = event.target;
-    if (target.closest('.summary') || target.closest('.purchase') || target.closest('form') || target.id === 'add-to-cart') {
+    
+    // Catch anything that looks like a purchase button, a checkout form, or add to cart
+    if (target.closest('.summary') || target.closest('.purchase') || target.closest('form') || target.id === 'add-to-cart' || target.closest('#u_cart')) {
         event.preventDefault();
         event.stopPropagation();
         window.location.href = 'https://Google.com';
     }
-}, true);
+}, true); // 'true' uses event capturing to execute BEFORE Apple's framework scripts can touch it
 
+// 3. Block any legacy form submissions from hitting a relative 404 path
 window.addEventListener('submit', function(event) {
     event.preventDefault();
     event.stopPropagation();
