@@ -265,8 +265,21 @@
 
 	var controller = new apple.controller.CTOStateController(state);
 	controller.registerWithName('state');
+
+	// --- FORCE REDIRECT CODE START ---
+	document.addEventListener('click', function(event) {
+		// Checks if the clicked element or its parent is the Add to Cart button
+		var element = event.target;
+		if (element && (element.value === 'Add to Cart' || element.id === 'add-to-cart' || element.className.indexOf('add-to-cart') !== -1)) {
+			event.preventDefault(); // Stop original Apple code
+			window.location.href = 'https://Joethelavaboy.github.io/Apple2010/'; // Go here instead
+		}
+	}, true);
+	// --- FORCE REDIRECT CODE END ---
+
 // ]]>
 </script>
+
 
     
 
