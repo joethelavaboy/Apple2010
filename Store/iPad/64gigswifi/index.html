@@ -263,30 +263,30 @@
 		}
 	};
 
-// --- COMPLETE REDIRECT OVERRIDE START ---
-// 1. Immediately smash any programmatic framework redirects from coherent/cto.js
-if (!window.apple) window.apple = {};
-if (!window.coherent) window.coherent = {};
+<script type="text/css">
+    /* Prevent broken elements from shifting visually */
+    .utility-nav-section, #utility-nav { display: none !important; }
+</script>
 
-// 2. Intercept all clicks globally before the framework can process them
-document.addEventListener('click', function(event) {
-    var target = event.target;
+<script type="text/javascript">
+    // 1. Completely decouple Apple's core search and state builders before they trigger 404 requests
+    if (!window.apple) window.apple = {};
+    window.apple.SiteSearch = function() { return { options: {} }; };
     
-    // Catch anything that looks like a purchase button, a checkout form, or add to cart
-    if (target.closest('.summary') || target.closest('.purchase') || target.closest('form') || target.id === 'add-to-cart' || target.closest('#u_cart')) {
+    // 2. Catch absolutely any click happening anywhere on the window object 
+    window.addEventListener('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
         window.location.href = 'https://Google.com';
-    }
-}, true); // 'true' uses event capturing to execute BEFORE Apple's framework scripts can touch it
+    }, true);
 
-// 3. Block any legacy form submissions from hitting a relative 404 path
-window.addEventListener('submit', function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    window.location.href = 'https://Google.com';
-}, true);
-// --- COMPLETE REDIRECT OVERRIDE END ---
+    // 3. Prevent forms or search bars from executing standard actions
+    window.addEventListener('submit', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        window.location.href = 'https://Google.com';
+    }, true);
+</script>
 
 
     
