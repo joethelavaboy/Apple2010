@@ -1,36 +1,84 @@
 /* ========================================================= */
-/* APPLE 2010 SITE SEARCH ARCHITECTURE INTERCEPTOR           */
+/* APPLE 2010 SITE SEARCH ENGINE - LOCAL JAVASCRIPT SYSTEM    */
 /* ========================================================= */
 var AppleSearchEngine = {
     init: function() {
-        // Automatically check the address bar parameters (?q=keyword)
+        // 1. DYNAMIC PRESENTATION FIX: Force layout boundaries and center the columns directly in the browser memory
+        var designOverride = document.createElement('style');
+        designOverride.type = 'text/css';
+        designOverride.innerHTML = `
+            #main, .search-results {
+                width: 980px !important;
+                margin: 0 auto !important;
+                padding: 40px 0 !important;
+                display: block !important;
+                float: none !important;
+            }
+            #content, .grid2col {
+                display: block !important;
+                width: 100% !important;
+            }
+            #search-results-container {
+                display: block !important;
+                width: 710px !important;
+                margin-top: 25px !important;
+            }
+            .results-section h2 {
+                font-size: 16px !important;
+                font-weight: bold !important;
+                color: #111 !important;
+                border-bottom: 1px dashed #d1d1d1 !important;
+                padding-bottom: 5px !important;
+                margin: 25px 0 15px 0 !important;
+            }
+            .result-item {
+                margin-top: 15px !important;
+                margin-bottom: 25px !important;
+                font-family: "Lucida Grande", Helvetica, Arial, sans-serif !important;
+            }
+            .result-item h3 a {
+                font-size: 14px !important;
+                font-weight: bold !important;
+                color: #0088cc !important;
+                text-decoration: none !important;
+            }
+            .result-item h3 a:hover { text-decoration: underline !important; }
+            .result-item p { font-size: 12px !important; color: #333 !important; line-height: 1.4 !important; }
+            .result-item .url { color: #006600 !important; font-size: 11px !important; }
+        `;
+        document.head.appendChild(designOverride);
+
+        // 2. Automatically check the live address bar tracking parameters (?q=keyword)
         var urlParams = new URLSearchParams(window.location.search);
         var searchQuery = urlParams.get('q');
 
-        // Locate layout containers matching unified.css structural selectors
-        var storeBox = document.getElementById('store-results');
-        var supportBox = document.getElementById('support-results');
-        var itunesBox = document.getElementById('itunes-results');
-        var instructionField = document.getElementById('search-status-instruction');
-        var titleHeader = document.getElementById('dynamic-search-title');
+        // Locate original container landmarks inside your archived text blocks
+        var storeBox = document.getElementById('store-results') || document.querySelector('.store');
+        var supportBox = document.getElementById('support-results') || document.querySelector('.support');
+        var itunesBox = document.getElementById('itunes-results') || document.querySelector('.itunes');
+        var instructionField = document.getElementById('search-status-instruction') || document.querySelector('#main p');
+        var titleHeader = document.getElementById('dynamic-search-title') || document.querySelector('h1');
 
-        // 1. DEFAULT BLANK VIEW STATE
+        // 3. BLANK STATE DEFAULT: If URL parameter is empty, maintain the clean empty look
         if (!searchQuery) {
             if (titleHeader) titleHeader.innerText = "Search Results";
             if (instructionField) {
                 instructionField.style.display = 'block';
-				instructionField.innerText = "Enter a search term in the field above.";
+                instructionField.innerText = "Enter a search term in the field above.";
             }
+            if (storeBox) storeBox.innerHTML = '';
+            if (supportBox) supportBox.innerHTML = '';
+            if (itunesBox) itunesBox.innerHTML = '';
             return;
         }
 
         searchQuery = decodeURIComponent(searchQuery).toLowerCase().trim();
 
-        // Sync inputs automatically across both the navigation bar and the center page bar
+        // Push text inputs back inside input boxes uniformly
         var textInputs = document.querySelectorAll('input[type="text"]');
         textInputs.forEach(function(input) { input.value = searchQuery; });
 
-        // 2. CONDITION: USER SEARCHES FOR IPAD (Official word-for-word marketing text)
+        // 4. CONDITION 1: USER QUERIES 'IPAD'
         if (searchQuery === "ipad") {
             if (titleHeader) titleHeader.innerText = "Search Results for 'ipad'";
             if (instructionField) instructionField.style.display = 'none';
@@ -60,7 +108,7 @@ var AppleSearchEngine = {
                     </div>`;
             }
 
-        // 3. CONDITION: USER SEARCHES FOR IPHONE OR IPHONE 4
+        // 5. CONDITION 2: USER QUERIES 'IPHONE' OR 'IPHONE 4'
         } else if (searchQuery === "iphone" || searchQuery === "iphone 4") {
             if (titleHeader) titleHeader.innerText = "Search Results for '" + searchQuery + "'";
             if (instructionField) instructionField.style.display = 'none';
@@ -85,7 +133,7 @@ var AppleSearchEngine = {
                 itunesBox.innerHTML = `<p style="color:#666; font-size:12px; padding:10px 0; font-family:sans-serif;">No iTunes results found matching your query.</p>`;
             }
 
-        // 4. CONDITION: GIBBERISH / NO SEARCH MATCH
+        // 6. FALLBACK MODE: GIBBERISH INPUTS
         } else {
             if (titleHeader) titleHeader.innerText = "Search Results for '" + searchQuery + "'";
             if (instructionField) {
