@@ -1,4 +1,10 @@
-/* Execute Apple's custom framework engine on DOM layout completion */
+/* ========================================================= */
+/* APPLE 2010 SEARCH ENGINE ENGINE RUNNER                    */
+/* ========================================================= */
+
+// Safely execute the custom initializer once the document finishes parsing
 document.addEventListener("DOMContentLoaded", function() {
-    AppleSearchEngine.init();
+    if (typeof AppleSearchEngine !== 'undefined') {
+        AppleSearchEngine.init();
+    }
 });
