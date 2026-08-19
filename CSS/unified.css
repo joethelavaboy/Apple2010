@@ -1,0 +1,297 @@
+/* Jump Styles 
+-----------------------------*/
+@import url("https://web.archive.org/web/20101011052645cs_/http://images.apple.com/search/styles/search_featured.css"); 
+
+/* General Styles 
+-----------------------------*/
+body { font-size:11px; line-height:1.3em; color:#333; font-family:"Lucida Grande", Helvetica, Verdana, Arial, sans-serif; }
+
+.ACHidden { display: none; line-height:0; }
+
+* { padding:0; margin:0; }
+
+#globalfooter p, #globalfooter ul { font-size:10px; *font-size:9.5px; }
+#globalfooter { font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; }
+
+fieldset { padding:.5em; }
+select option { padding:0 5px; }
+.block { margin:15px 0; }
+.hide { display:none; }
+a { color:#0099cc; }
+a img { border:none; }
+
+a, :focus, :active { outline:none; }
+img.left { float:left; margin:2px 10px 5px 0; border:0; }
+img.right { float:right; margin:2px 0 5px 10px; border:0; }
+img.across { margin:0 0 10px 0; border:0; }
+
+div.clearer { clear:both; display:block; margin:0; padding:0; height:0; line-height:1px; font-size:1px; }
+
+.loading  { margin:50px auto; width:30px; height:30px; text-indent:-9999px; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/waitanimation.gif) 0 0 no-repeat; }
+.section.loading {background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/waitanimation.gif) center center no-repeat; height: 180px;}
+
+
+/* buttons
+--------------------------- */
+.btn_search { display:block; float:left; margin-top:4px; _margin-top:-4px; padding-right:9px; height:21px; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/btn_search_right.png) no-repeat top right; text-decoration:none; }
+.btn_search:hover { text-decoration:none; }
+.btn_search span { display:block; padding:2px 0 5px 8px; color:#fff; font-weight:normal; font-size:10px; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/btn_search_left.png) no-repeat top left; }/**/
+
+
+/* Search Styles 
+----------------------------*/
+#container { width:984px; margin:30px auto; position:relative; }
+#container h1 { color:#000; font-weight:normal; font-size:24px; margin-left:15px; }
+
+#main { width:984px; margin:0; text-align:left; }
+#main h2 { color:#000; font-weight:normal; font-size:18px; }
+
+#main .bar { height: 32px; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/search_bg.png) 0 0 repeat-y; }
+#main .bar .cap { width:984px; height:5px; top:0; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/search_cap.png) 0 0 no-repeat; }
+#main .bar.boot { width:984px; height:5px; bottom:0; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/search_boot.png) 0 0 no-repeat; padding-bottom:10px; }
+
+#main .bar form.search { position:relative; float:left; width:530px; margin:4px 10px 4px 15px; padding:0; height:19px; _margin:-4px 10px 2px 8px; }
+#main .bar form.search .search-wrapper, #main .bar form.search input.prettysearch { width:529px; }
+#main .bar form.search .search-wrapper input.prettysearch { width:500px; margin-left:20px; }
+#main .bar p { padding:3px 0; margin:0; }
+
+#main p.suggestion { padding:0 30px; margin:0; }
+#main p.error { font-weight:bold; }
+
+/* search box
+--------------------- */
+#container #main #content.box { width:984px; margin:10px 0 0; padding:0; float:left; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/bg_stripe.png) 0 0 repeat-y; }
+#container #main #content.box .cap { width:984px; height:5px; top:0; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/bg_cap.png) 0 0 no-repeat; }
+#container #main #content.box .boot { width:984px; height:63px; bottom:0; padding:0; background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/bg_boot.png) 0 0 no-repeat; }
+
+
+/* ubers 
+-----------------*/
+#container #main #content .grid2col .column .products .grid2col { margin:0; padding:0; width:677px; }
+#container #main #content .grid2col .column .products .grid2col .column.first .acell, 
+#container #main #content .grid2col .column .products .grid2col .column.first .bcell, 
+#container #main #content .grid2col .column .products .grid2col .column.first .ccell { border-bottom:1px solid #e8e8e8; }
+
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first { display:table; #position:relative; overflow:hidden; margin:-4px 0 0; padding-left:15px; width:662px; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .acell { display:none; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .bcell { #position:absolute; display:table-cell; vertical-align:bottom; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .bcell img { padding:20px 15px 0; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .ccell { #position:absolute; #top:50%; display:table-cell; vertical-align:middle; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .ccell .ucopy { #position:relative; #top:-50%; margin:15px 0; padding:0; white-space:normal; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .ccell .ucopy h2 { margin:0; padding:0; font-size:16px; line-height:1.4em; font-weight:bold; color:#000; border:none; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .ccell .ucopy h3 { margin:0; padding:0; font-size:16px; line-height:1.4em; font-weight:normal; color:#333; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .ccell .ucopy .learn { margin:0; font-size:16px; line-height:1.4em; }
+#container #main #content .grid2col .column .products .grid2col .uber_a.column.first .ccell .ucopy .learn a.more { background:transparent url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/global/elements/arrows/morearrow_08c.gif) no-repeat 100% 60% }
+
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first { display:table; #position:relative; overflow:hidden; margin:-4px 0 0; padding-left:15px; width:662px; }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #container #main #content .grid2col .column .products .grid2col .uber_b.column.first { width:692px; }
+	} 
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .bcell { #position:absolute; display:table-cell; vertical-align:bottom; text-align:right; }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .bcell img { padding:20px 0 0 15px; }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .acell { #position:absolute; #top:50%; display:table-cell; vertical-align:middle; }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .acell .ucopy { #position:relative; #top:-50%; margin:15px 0 15px 15px; padding:0; white-space:normal; }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .acell .ucopy h2 { margin:0; padding:0; font-size:16px; line-height:1.4em; font-weight:bold; color:#000; border:none; }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .acell .ucopy h3 { margin:0; padding:0; font-size:16px; line-height:1.4em; font-weight:normal; color:#333; }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .acell .ucopy .learn { margin:0; font-size:16px; line-height:1.4em; }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .acell .ucopy .learn a.more { background:transparent url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/global/elements/arrows/morearrow_08c.gif) no-repeat 100% 60% }
+#container #main #content .grid2col .column .products .grid2col .uber_b.column.first .ccell { display:none; }
+
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first {  display:table; #position:relative; overflow:hidden; background:transparent url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/fpo_uber_c.png) no-repeat 0 0; margin:-4px 0 0 0; padding: 0 0 0 30px; width:662px; height:151px; border-bottom:1px solid #e8e8e8; }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #container #main #content .grid2col .column .products .grid2col .uber_c.column.first { width:692px; }
+	}
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first img { display:none; }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .acell { display:none; border:none; }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .bcell { #position:absolute; #top:50%; display:table-cell; vertical-align:middle; border:none; }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .bcell .ucopy { #position:relative; #top:-50%; margin:15px 0; padding:0; white-space:normal; }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .bcell .ucopy h2 { margin:0; padding:0; font-size:26px; line-height:1.4em; font-weight:bold; color:#000; border:none; }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .bcell .ucopy h3 { margin:0; padding:0; font-size:18px; line-height:1.4em; font-weight:normal; color:#333; }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .bcell .ucopy .learn { margin:0; font-size:18px; line-height:1.4em; }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .bcell .ucopy .learn a.more { background:transparent url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/global/elements/arrows/morearrow_08c.gif) no-repeat 100% 60% }
+#container #main #content .grid2col .column .products .grid2col .uber_c.column.first .ccell { display:none; border:none; }
+
+/* 1,2,3 up shortcuts 
+--------------------------- */
+#container #main #content .grid2col .column .products { width:692px; }
+#container #main #content .grid2col .column .products .grid3col.featured { border-top:1px solid #e8e8e8; width:662px; margin:0 15px; }
+#container #main #content .grid2col .column .products .grid3col.featured .column a h3 { color: #000; font-size:12px; }
+#container #main #content .grid2col .column .products .grid3col.featured .column a:hover { color:#08c; text-decoration:none; }
+#container #main #content .grid2col .column .products .grid3col.featured .column a:hover h3 { color:#08c; }
+#container #main #content .grid2col .column .products .grid3col.featured .column a.more:hover { text-decoration:underline; }
+#container #main #content .grid2col .column .products .grid3col.featured .column h4 { color: #333; font-size:12px; font-weight:normal; font-style:italic; }
+#container #main #content .grid2col .column .products .grid3col.featured .column p { font-size:12px; color:#333; line-height:1.5em; margin-bottom:10px; }
+#container #main #content .grid2col .column .products .grid3col.featured .column.last p { padding-left:0; }
+#container #main #content .grid2col .column .products .grid3col.featured .column.last a.more { visibility:visible; }
+
+#container #main #content .grid2col .column .products .grid3col.featured.oneup img,
+#container #main #content .grid2col .column .products .grid3col.featured.twoup img,
+#container #main #content .grid2col .column .products .grid3col.featured.threeup img { margin-top:10px; height:70px;}
+
+/* 3 up shortcuts */
+#container #main #content .grid2col .column .products .grid3col.featured.threeup { border-bottom:1px solid #e8e8e8; margin:0 0 0 15px; padding:0 0 10px;  }
+#container #main #content .grid2col .column .products .grid3col.featured.threeup .column { width:190px; margin:10px 15px 0; padding:0 15px 0; border:1px solid #e8e8e8; border-width:0 1px; }
+#container #main #content .grid2col .column .products .grid3col.featured.threeup .column.first { margin-right:0; padding:0 0 0 15px; border:none; }
+#container #main #content .grid2col .column .products .grid3col.featured.threeup .column.last { margin-right:0; padding:0 15px 0 0; border:none; }
+#container #main #content .grid2col .column .products .grid3col.featured.threeup .column img { margin-bottom:15px; }
+
+/* 2 up shortcuts */
+#container #main #content .grid2col .column .products .grid3col.featured.twoup { border-bottom:1px solid #e8e8e8; margin:0 0 0 15px; padding:0 0 10px; }
+#container #main #content .grid2col .column .products .grid3col.featured.twoup .column { width:290px; margin:10px 15px 0; padding:0 15px 0; border-left:1px solid #e8e8e8; }
+#container #main #content .grid2col .column .products .grid3col.featured.twoup .column.first { border:none; margin:10px 0 0; padding:0 0 0 15px; }
+#container #main #content .grid2col .column .products .grid3col.featured.twoup .column img { margin-bottom:15px; }
+
+/* 1 up shortcuts */
+#container #main #content .grid2col .column .products .grid3col.featured.oneup .column { width:662px; margin:15px 0; *padding-bottom:5px; border-right:none; border-bottom:1px solid #e8e8e8; }
+#container #main #content .grid2col .column .products .grid3col.featured.oneup .column img { float:left; margin:0 15px 15px; }
+
+
+/* results main bento
+--------------------- */
+#container #main #content .grid2col { margin:0 2px; width:980px; }
+#container #main #content .grid2col .column.first { margin:0; width:692px; }
+#container #main #content .grid2col .column.first h2 { margin:9px 0 23px 0; padding:0 15px 12px; border-bottom:1px solid #e8e8e8; }
+#container #main #content .grid2col .column.first h2 span { float:right; font-size:12px; font-weight:normal; color:#333; text-align:right; }
+
+#container #main #content .grid2col .column.first .resultcount { font-size:12px; margin:-2px 15px 0; padding:13px 15px 12px; width:632px; }
+#container #main #content .grid2col .column.first p.results { font-size:12px; margin-bottom:15px; padding-top:15px; }
+#container #main #content .grid2col .column.first p#www-no-results.results { margin:-2px 15px 0; padding:13px 15px 12px; }
+
+#container #main #content .grid2col .column.first ul.results { clear:both; margin:0; padding:0 0 0 15px; list-style-type:none; width:662px; }
+#container #main #content .grid2col .column.first ul.results li { position:relative; margin:0; padding:20px 15px; border-top:1px solid #e8e8e8 !important; clear:left; font-size:14px; line-height:1.5em; color:#000; }
+#container #main #content .grid2col .column.first ul.results li { border-top-width:3px\9 !important; }
+#container #main #content .grid2col .column.first ul.results li.first { border-top:none !important; _width:647px; }
+#container #main #content .grid2col .column.first ul.results li a { font-weight:bold; }
+#container #main #content .grid2col .column.first ul.results li span a { font-size:12px; font-weight:normal; text-decoration:none; color:#333; }
+#container #main #content .grid2col .column.first ul.results li span a:hover { text-decoration:none; color:#08c; }
+#container #main #content .grid2col .column.first ul.results li p { font-size:14px; margin:0; padding:0; }
+#container #main #content .grid2col .column.first ul.results ul { list-style-type:disc; padding-left:15px; margin-top:12px; } /* Nested lists in results should not be styled like results themselves */
+
+
+/* results side bentos
+---------------------- */
+#container #main #content .grid2col .column.last { width:262px; margin:0; padding:0 10px 0 15px; _padding:0; }
+#container #main #content .grid2col .column.last h2 { color:#000; }
+
+#container #main #content .grid2col .column.last .header { margin:0; _margin-left:10px; _width:262px; border-bottom:1px solid #fff; }
+#container #main #content .grid2col .column.last .header * { margin:0; padding:10px 15px; border-bottom:1px solid #e8e8e8; }
+
+#container #main #content .grid2col .column.last ul.results { width:auto; padding-left:0; }
+#container #main #content .grid2col .column.last ul.results li { position:relative; margin:0; padding:15px; clear:left; font-size:12px; font-weight:bold; line-height:1.5em; color:#000; border:none; }
+#container #main #content .grid2col .column.last ul.results li.first { width:auto; }
+#container #main #content .grid2col .column.last ul.results li.last { padding-bottom:15px; }
+#container #main #content .grid2col .column.last ul.results li img { float:left; }
+#container #main #content .grid2col .column.last ul.results li a { font-weight:bold; color:#000; }
+#container #main #content .grid2col .column.last ul.results li a:hover { text-decoration:none; color:#08c; }
+#container #main #content .grid2col .column.last ul.results li p { font-size:12px; margin:0; padding:0; }
+
+#container #main #content .grid2col .column.last .store ul.results { margin-bottom:5px; }
+#container #main #content .grid2col .column.last .store ul.results li span { display:block; margin-left:80px; }
+#container #main #content .grid2col .column.last .store ul.results li span.price,
+#container #main #content .grid2col .column.last .store ul.results li span.shipcost { font-weight:normal; color:#000; }
+#container #main #content .grid2col .column.last .store ul.results li span.shiptime { font-weight:normal; color:#666; }
+#container #main #content .grid2col .column.last .store ul.results li a:hover span.price,  
+#container #main #content .grid2col .column.last .store ul.results li a:hover span.shipcost { text-decoration:none; color: #000; }
+#container #main #content .grid2col .column.last .store ul.results li a:hover span.shiptime { text-decoration:none; color: #666; }
+#container #main #content .grid2col .column.last .store ul.results li .defstar img { float:none; }
+#container #main #content .grid2col .column.last .store p { padding-top:2px; margin-bottom:38px; }
+#container #main #content .grid2col .column.last p#store-no-results { margin-bottom:0; }
+
+#container #main #content .grid2col .column.last .support ul.results li span { display:block; margin-left:0; }
+#container #main #content .grid2col .column.last .support ul.results p  { color:#333333; font-weight:normal;}
+#container #main #content .grid2col .column.last p#support-no-results { margin-bottom:38px; }
+
+#container #main #content .grid2col .column.last .itunes ul.results li { min-height:60px;}
+#container #main #content .grid2col .column.last .itunes ul.results li img { -moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:transparent url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/itunes_album_thumbbg.gif) no-repeat scroll center bottom; display:block; height:60px; margin:0 auto; padding:0 1px 2px; }
+#container #main #content .grid2col .column.last .itunes ul.results li span { display:block; margin-left:70px; }
+#container #main #content .grid2col .column.last .itunes ul.results li span.title { margin-top: -4px;}
+#container #main #content .grid2col .column.last .itunes ul.results li span.artist { font-weight:normal; font-style:italic; line-height:16px;}
+#container #main #content .grid2col .column.last .itunes ul.results li span.artist a { font-weight:normal; }
+#container #main #content .grid2col .column.last .itunes ul.results li span.mediaType { font-weight:normal; color:#666; }
+#container #main #content .grid2col .column.last .itunes ul.results li a.album { width:60px; height:60px; overflow:hidden;}
+#container #main #content .grid2col .column.last .itunes ul.results li a:hover span.mediaType { text-decoration:none; color:#666; }
+#container #main #content .grid2col .column.last .itunes ul.results li.first { _width:252px; }
+#container #main #content .grid2col .column.last .itunes ul.results li.last { padding-bottom:25px; }
+#container #main #content .grid2col .column.last .itunes p { _margin-top:15px; }
+
+#container #main #content .grid2col .column.last p { margin:0 0 32px; padding-left:15px; }
+#container #main #content .grid2col .column.last a.more { font-size:12px; }
+
+/* paginator
+--------------------- */
+#container #main #content .boot div.paginator { width: 690px; text-align:center;  margin:0 0px; padding:23px 0; }
+#container #main #content .boot div.paginator ul.paginator { display:inline; list-style-type:none; margin:0; text-align:center; }
+#container #main #content .boot div.paginator ul.paginator li { display:inline; font-weight: bold; margin:0 2px; }
+#container #main #content .boot div.paginator ul.paginator li a { padding:4px; border:1px solid #cdcdcd; color:#08c; background-color:#fff; }
+#container #main #content .boot div.paginator ul.paginator li a.more { padding-right:14px; background-position:90% 50%;}
+#container #main #content .boot div.paginator ul.paginator li.inactive { color:#000; }
+#container #main #content .boot div.paginator ul.paginator li.inactive a { cursor:default; text-decoration:none; padding:5px; border:none; color:#000; background-color:#fbfbfb; }
+#container #main #content .boot div.paginator a.previous { color:#08c; margin-right:2px; white-space:nowrap; background:#fff url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/lessarrow_blue.png) no-repeat scroll 15% 50%; border:1px solid #cdcdcd; padding:4px 4px 4px 14px; }
+#container #main #content .boot div.paginator a.previous.inactive { color:#666; background:transparent url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/lessarrow_gray.png) no-repeat scroll 15% 50%; border:none; }
+#container #main #content .boot div.paginator a.previous.inactive:hover { cursor:default; text-decoration:none; } 
+#container #main #content .boot div.paginator a.next { padding:5px; color:#08c; margin-left:2px; white-space:nowrap; background:#fff url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/morearrow_blue.png) no-repeat scroll 85% 50%; border:1px solid #cdcdcd; padding:4px 14px 4px 4px;}
+#container #main #content .boot div.paginator a.next.inactive { border:none; color:#666; background:transparent url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/morearrow_gray.png) no-repeat scroll 90% 50%; }
+#container #main #content .boot div.paginator a.next.inactive:hover { cursor:default; text-decoration:none; } 
+
+
+/* store star ratings
+--------------------- */
+.star-rating-10, .star-rating-15, .star-rating-20, .star-rating-25, .star-rating-30, .star-rating-35, .star-rating-40, .star-rating-45, .star-rating-50 {
+background-image:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/star-ratings.png);
+background-repeat:no-repeat;
+height:13px;
+margin:0;
+padding:0;
+width:61px;
+}
+.star-rating-10 {
+background-position:0 0;
+}
+.star-rating-15 {
+background-position:0 -13px;
+}
+.star-rating-20 {
+background-position:0 -26px;
+}
+.star-rating-25 {
+background-position:0 -39px;
+}
+.star-rating-30 {
+background-position:0 -52px;
+}
+.star-rating-35 {
+background-position:0 -65px;
+}
+.star-rating-40 {
+background-position:0 -78px;
+}
+.star-rating-45 {
+background-position:0 -91px;
+}
+.star-rating-50 {
+background-position:0 -104px;
+}
+
+#loadingPanel { background:url(https://web.archive.org/web/20101011052645im_/http://images.apple.com/search/images/waitanimation.gif) center top no-repeat; margin:20px auto -10px auto; height: 40px; width: 100%; padding-top: 40px; text-indent:0px; text-align: center;  }
+#enterSearchTerm {text-align: center;}
+
+/*
+     FILE ARCHIVED ON 05:26:45 Oct 11, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:40:48 Aug 19, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.409
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.037
+  esindex: 0.007
+  cdx.remote: 6.258
+  LoadShardBlock: 73.451 (3)
+  PetaboxLoader3.resolve: 66.884 (4)
+  PetaboxLoader3.datanode: 51.81 (4)
+  load_resource: 48.674
+*/
