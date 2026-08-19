@@ -3,7 +3,7 @@
 /* ========================================================= */
 var AppleSearchEngine = {
     init: function() {
-        // 1. DYNAMIC PRESENTATION FIX: Force layout boundaries and center the columns directly in the browser memory
+        // 1. DYNAMIC PRESENTATION FIX: Enforce standard flex maps and align navigation properties
         var designOverride = document.createElement('style');
         designOverride.type = 'text/css';
         designOverride.innerHTML = `
@@ -45,6 +45,50 @@ var AppleSearchEngine = {
             .result-item h3 a:hover { text-decoration: underline !important; }
             .result-item p { font-size: 12px !important; color: #333 !important; line-height: 1.4 !important; }
             .result-item .url { color: #006600 !important; font-size: 11px !important; }
+
+            /* ========================================================= */
+            /* NEW NAVIGATION & SEARCH FIELD CAPS CORRECTION OVERRIDES   */
+            /* ========================================================= */
+            
+            /* Hide the ugly floating raw 'Search' text element above the box */
+            #globalsearch label {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            /* Unroll the navigation bar elements evenly across Apple's 980px grid width limits */
+            #globalnav {
+                display: flex !important;
+                justify-content: space-between !important;
+                width: 750px !important;
+                float: left !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                list-style: none !important;
+            }
+
+            /* Re-align the right-hand search wrapper widget block alignment */
+            #globalsearch {
+                float: right !important;
+                width: 140px !important;
+                margin-top: 5px !important;
+            }
+
+            /* Force the top nav text input into an authentic 2010 capsule shape */
+            #sp-searchtext {
+                background: #fff !important;
+                border: 1px solid #1c1c1c !important;
+                border-radius: 12px !important;
+                padding: 2px 10px 2px 24px !important;
+                font-size: 11px !important;
+                color: #333 !important;
+                width: 110px !important;
+                outline: none !important;
+                /* Simulated magnifying glass icon */
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://w3.org" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="%23888" stroke-width="3"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>') !important;
+                background-repeat: no-repeat !important;
+                background-position: 7px 4px !important;
+            }
         `;
         document.head.appendChild(designOverride);
 
